@@ -24,7 +24,7 @@ Since I bought a laptop, I wanted to check if I got scammed or not by applying m
 **My laptop data:** For the given columns, I looked up the specs of my laptop.
 
 ## Model Building
-The tests have been done with a `XGBRegressor`-Model since that is the most accurate one I learned so far.
+The tests have been done with a `XGBRegressor`-model since that is the most accurate one I learned so far.
 1. Create a scoring method `get_score` to evaluate quality of the model based on Mean Average Error (MAE)
 2. Run a loop that determines the best parameters (`n_estimators`, `learning_rate`) for this model.
 
