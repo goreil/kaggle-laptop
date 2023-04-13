@@ -21,7 +21,7 @@ Since I bought a laptop, I wanted to check if I got scammed or not by applying m
 2. Columns with categorical data, cardinality < 10
 3. Columns with numerical data
 
-**My Laptop data:** For the given columns, I looked up the specs of my laptop.
+**My laptop data:** For the given columns, I looked up the specs of my laptop.
 
 ## Model Building
 The tests have been done with a `XGBRegressor`-Model since that is the most accurate one I learned so far.
@@ -39,12 +39,12 @@ The model estimates the price of my laptop to be 1727.37€, but I paid barely 8
 
 ### Future Work
 1. Better Data Cleaning:
-* Analyse if dataset actually contains reasonable prices.
-* Analyse which columns that might cause overfitting.
-* Include columns with NA-values.
-* Learn from other peoples Work.
+  * Analyse if dataset actually contains reasonable prices.
+  * Analyse which columns that might cause overfitting.
+  * Include columns with NA-values.
+  * Learn from other peoples Work.
 
 2. Better Model Creation:
-* Learn about more models and how they work.
-* Find a better fitting model.
-* Adjust paramters for lower Mean Average Error.
+  * Learn about more models and how they work.
+  * Find a better fitting model.
+  * Adjust paramters for lower Mean Average Error.
