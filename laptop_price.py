@@ -5,17 +5,17 @@ Author: Youheng Lü
 """
 
 import os
+
 import numpy as np
 import pandas as pd
-
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
-from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.model_selection import cross_val_score
-from xgboost import XGBRegressor
-from tqdm import tqdm
 from matplotlib import pyplot as plt
+from sklearn.compose import ColumnTransformer
+from sklearn.impute import SimpleImputer
+from sklearn.model_selection import cross_val_score
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder
+from tqdm import tqdm
+from xgboost import XGBRegressor
 
 
 def get_score(n_estimators: int, learning_rate: float) -> float:
@@ -60,9 +60,7 @@ if __name__ == "__main__":
     target_column = "Price_euros"
 
     # drop rows with missing target
-    X_full.dropna(
-        axis=0, subset=[target_column], inplace=True
-    )
+    X_full.dropna(axis=0, subset=[target_column], inplace=True)
     y = X_full[target_column]
     X_full.drop([target_column], axis=1, inplace=True)
 
