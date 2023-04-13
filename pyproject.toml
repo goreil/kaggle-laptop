@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "kagge-laptop"
+version = "1.0"
+description = "Given the specs of my laptop, how much should it have cost?"
+authors = ["Youheng Lü"]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+numpy = "^1.24.2"
+xgboost = "^1.7.5"
+tqdm = "^4.65.0"
+matplotlib = "^3.7.1"
+scikit-learn = "^1.2.2"
+pandas = "^2.0.0"
